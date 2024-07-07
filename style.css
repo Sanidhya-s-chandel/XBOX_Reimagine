@@ -1,0 +1,562 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width:600px) {
+  .nav h2 {
+    display: initial;
+  }
+
+  .nav h1 {
+    display: none;
+  }
+}
+
+.sidebar {
+  transition: all ease-in 0.8s;
+}
+
+.nav h1 {
+  cursor: pointer;
+}
+
+.sidebar h1 {
+  cursor: pointer;
+}
+
+.mySwiper2 .swiper-wrapper .swiper-slide img {
+  border-radius: 25px;
+}
+
+.slide1 {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/Elden-Ring-Shadow-of-the-Erdtree-background-desktop-01-en-01mar24?$2400px$);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide2 {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/elder-scrolls-online-gold-road-hero-desktop-01-en-14may24?$2400px$);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide3 {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/FFXIV-Dawntrail-homepage-hero-desktop-01-en-27jun24?$2400px$);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide4 {
+  background-image: url(https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/6zhGBKQpPrlLNI2a7EfALNs1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide5 {
+  background-image: url(https://store-images.s-microsoft.com/image/apps.12298.13718773309227929.a9ed3a56-4096-4b23-aca9-a9d49ff8b774.f8ebc9ec-feca-4dc3-b81a-1d5a4df00111);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide6 {
+  background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/bo6/Store_BO6PDP_Hero.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.show:hover {
+  border: 3px solid gray;
+  box-shadow: 0px 0px 15px black;
+}
+
+.btns:hover {
+  box-shadow: 0px 0px 10px white;
+}
+
+.backjune {
+  background-image: url(https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg);
+  background-size: cover;
+}
+
+.card1:hover {
+  border: 3px solid white;
+  border-radius: 25px;
+  background-color: rgb(57, 55, 54);
+}
+
+.show2:hover {
+  box-shadow: 0px 0px 15px white;
+}
+
+.Product-b {
+  height: 110vh;
+  width: 100vw;
+  background-color: #222;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Product {
+  height: 70vh;
+  width: 100vw;
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: center;
+}
+
+.one {
+  width: 25vw;
+  height: 50vh;
+  /* background-color: black; */
+  position: relative;
+  border: 1px, solid rgba(144, 144, 144, 0.282);
+  border-radius: 3.3vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  flex: 0 0 auto;
+}
+
+.card {
+  height: 50vh;
+  width: 25vw;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  perspective: 1000px;
+  border: none;
+  border-radius: 3.3vh;
+  margin-right: 2vw;
+}
+
+.front {
+  position: absolute;
+  width: 25vw;
+  height: 50vh;
+  backface-visibility: hidden;
+  background-color: blue;
+  border: none;
+  border-radius: 3.3vh;
+}
+
+.front img {
+  width: 25vw;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
+  border: none;
+  border-radius: 3.3vh;
+}
+
+.back {
+  position: absolute;
+  width: 25vw;
+  height: 50vh;
+  backface-visibility: hidden;
+  border: none;
+  border-radius: 3.3vh;
+  color: white;
+  /* background-color: rgb(0, 0, 0); */
+  transform: rotateY(180deg);
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.b-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://media.istockphoto.com/id/1337108175/vector/dark-gray-3d-hexagonal-technology-vector-abstract-background.jpg?s=612x612&w=0&k=20&c=RYHI2M_KPCMORuSJKZ_klHmWURsZpgrnmfyDnvBNM1Y=);
+  color: white;
+  border-radius: 3.3vh;
+}
+
+.Animate::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.Animate:hover::after {
+  animation-name: ani;
+  animation-duration: 2s;
+  background-color: white;
+}
+
+@keyframes ani {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.container {
+  width: 100vw;
+  background-color: transparent;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.box {
+  height: 80vh;
+  padding: 3vh;
+  border: 1px solid black;
+  border-radius: 5vh;
+  margin-right: 1vh;
+  flex: 1;
+  transition: all ease 1.5s;
+  background-image: url("https://image.api.playstation.com/vulcan/ap/rnd/202211/0914/TvcIHkYqqln1RGbaFqBeuFp6.jpg?w=780&thumb=false");
+  background-size: cover;
+  background-position: center;
+}
+
+.box:hover {
+  flex: 9;
+}
+
+.box1 {
+  height: 80vh;
+  background-image: url("https://image.api.playstation.com/vulcan/img/rnd/202111/0506/hcFeWRVGHYK72uOw6Mn6f4Ms.jpg?w=780&thumb=false");
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5vh;
+  margin-right: 1vh;
+  flex: 1;
+  transition: all ease 1.5s;
+  background-position: center;
+  background-size: cover;
+}
+
+.box1:hover {
+  flex: 9;
+}
+
+.box2 {
+  height: 80vh;
+  background-image: url("https://image.api.playstation.com/vulcan/ap/rnd/202203/0911/VIB0SeEj9vT6DTv7P4thJLZi.jpg?w=780&thumb=false");
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5vh;
+  margin-right: 1vh;
+  flex: 1;
+  transition: all ease 1.5s;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.box2:hover {
+  flex: 9;
+
+}
+
+.box3 {
+  height: 80vh;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5vh;
+  margin-right: 1vh;
+  background-image: url("https://image.api.playstation.com/vulcan/ap/rnd/202010/0822/4WzxHtmjXV1dQpWqj1B6UAMk.jpg?w=780&thumb=false");
+  flex: 1;
+  transition: all ease 1.5s;
+  background-position: center;
+  background-size: cover;
+}
+
+.box3:hover {
+  flex: 9;
+}
+
+.box4 {
+  height: 80vh;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5vh;
+  margin-right: 1vh;
+  background-image: url("https://gameover-pnx.com/wp-content/uploads/2024/04/AC-Hexe.jpg");
+  flex: 1;
+  transition: all ease 1.5s;
+  background-position: center;
+  background-size: cover;
+}
+
+.box4:hover {
+  flex: 9;
+}
+
+.Top-5 {
+  background-image: url(./xbox\ bg.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vh;
+  height: 18vh;
+  width: 100vw;
+  background-color: rgb(15, 15, 15);
+  padding: 2vw;
+}
+
+.icons {
+  display: inline-flex;
+
+}
+
+.icons a {
+  margin: 0 25px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+
+@media (max-width:550px) {
+  .icons a {
+    margin: 0 7px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: relative;
+  }
+
+  .icons a .layer {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 130px;
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+  }
+
+  .icons a .layer span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+
+  .hello {
+    font-size: 80px;
+  }
+}
+
+.icons a .layer {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
+}
+
+.icons a:hover .layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+
+.icons a .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.icons a .layer span .fab {
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.icons a:hover .layer span:nth-child(1) {
+  opacity: 0.2;
+}
+
+.icons a:hover .layer span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+
+.icons a:hover .layer span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+
+.icons a:hover .layer span:nth-child(4) {
+  opacity: 0.8;
+  transform: translate(15px, -15px);
+}
+
+.icons a:hover .layer span:nth-child(5) {
+  opacity: 1;
+  transform: translate(20px, -20px);
+}
+
+.icons a:nth-child(1) .layer span,
+.icons a:nth-child(1) .text {
+  color: #4267B2;
+  border-color: #4267B2;
+}
+
+.icons a:nth-child(2) .layer span,
+.icons a:nth-child(2) .text {
+  color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+
+.icons a:nth-child(3) .layer span,
+.icons a:nth-child(3) .text {
+  color: #E1306C;
+  border-color: #E1306C;
+}
+
+.icons a:nth-child(4) .layer span,
+.icons a:nth-child(4) .text {
+  color: #54d7a2;
+  border-color: #7ceea8;
+}
+
+.icons a:nth-child(5) .layer span,
+.icons a:nth-child(5) .text {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+.icons a:hover:nth-child(1) .layer span {
+  box-shadow: -1px 1px 3px #4267B2;
+}
+
+.icons a:hover:nth-child(2) .layer span {
+  box-shadow: -1px 1px 3px #1DA1F2;
+}
+
+.icons a:hover:nth-child(3) .layer span {
+  box-shadow: -1px 1px 3px #E1306C;
+}
+
+.icons a:hover:nth-child(4) .layer span {
+  box-shadow: -1px 1px 3px #2867B2;
+}
+
+.icons a:hover:nth-child(5) .layer span {
+  box-shadow: -1px 1px 3px #ff0000;
+}
+
+.icons a .text {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  opacity: 0;
+  font-weight: 500;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+.icons a:hover .text {
+  bottom: -35px;
+  opacity: 1;
+}
+
+.hello {
+  font-size: 6vh;
+  padding: 4px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-image: url(https://wallpapers.com/images/hd/microsoft-xbox-one-logo-rvm0db1p80t5x9rb.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.pbtn h1 {
+  mix-blend-mode: difference;
+}
+
+.Devices {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  gap: 45px;
+  padding: 20px;
+}
+
+.heading {
+  background-image: url(https://i.pinimg.com/564x/da/0b/73/da0b73f96cc382fd39485054926f71b0.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.c-img {
+  transition: all ease-in 1s;
+}
+
+.bottom-text {
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(transparent, black);
+  bottom: -50%;
+  position: absolute;
+  transition: all ease 1s;
+  z-index: 0;
+}
+
+.st1:hover .bottom-text,
+.st2:hover .bottom-text,
+.st3:hover .bottom-text,
+.st4:hover .bottom-text {
+  bottom: 0;
+  z-index: 1;
+}
+
+.tt {
+  font-size: 70px;
+  color: rgba(0, 0, 0, 0.788);
+  text-shadow:
+    -1px -1px 0 #fff7f7,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #fff9f9,
+    1px 1px 0 #ffffff;
+  font-weight: 600;
+  font-family: Gilroy;
+}
